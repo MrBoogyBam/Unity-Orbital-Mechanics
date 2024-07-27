@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 215605868}
   - component: {fileID: 215605869}
   - component: {fileID: 215605870}
+  - component: {fileID: 215605871}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -2350,6 +2351,21 @@ LineRenderer:
     generateLightingData: 1
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &215605871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215605863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008ee273ecfb25b4c87928c4b9233001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 60
+  slowDownDistance: 700
+  slowDownAmount: 15
 --- !u!1 &254829569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,9 +2581,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1472000304}
   distance: 1420
-  smoothSpeed: 0.3
-  zoomAmount: 50
+  smoothSpeed: 0.2
+  smoothZoomSpeed: 0.02
+  smoothSwitchSpeed: 0.05
+  zoomAmount: 250
   sensitivity: 300
+  maxDistance: 7000
+  test: 5
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2616,6 +2636,7 @@ GameObject:
   - component: {fileID: 1472000305}
   - component: {fileID: 1472000306}
   - component: {fileID: 1472000307}
+  - component: {fileID: 1472000308}
   m_Layer: 0
   m_Name: Star
   m_TagString: Untagged
@@ -4829,6 +4850,21 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1472000308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472000300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008ee273ecfb25b4c87928c4b9233001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 580
+  slowDownDistance: 2400
+  slowDownAmount: 5
 --- !u!1 &1781210568
 GameObject:
   m_ObjectHideFlags: 0
@@ -4844,6 +4880,7 @@ GameObject:
   - component: {fileID: 1781210571}
   - component: {fileID: 1781210570}
   - component: {fileID: 1781210569}
+  - component: {fileID: 1781210576}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -7056,6 +7093,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1781210576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781210568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008ee273ecfb25b4c87928c4b9233001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 15
+  slowDownDistance: 700
+  slowDownAmount: 30
 --- !u!1 &1849973055
 GameObject:
   m_ObjectHideFlags: 0
